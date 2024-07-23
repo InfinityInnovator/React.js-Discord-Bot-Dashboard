@@ -1,54 +1,39 @@
-## Features Overview
+# Discord Bot Dashboard
 
-### Dashboard Overview
+Welcome to the **Discord Bot Dashboard**! This React.js application allows you to manage and monitor your Discord bot's activities and settings.
 
-- **Live Status:** Displays real-time status of your bot, including uptime and any errors.
-- **Shard Information:** Monitor the status of individual shards, including their resource usage.
+![Discord Bot Dashboard](https://img.shields.io/badge/Discord_Bot_Dashboard-React.js-blue)
 
-### Shard Management
+## Table of Contents
 
-- **View Shards:** See a list of all active shards with their status.
-- **Control Shards:** Restart or stop specific shards as needed.
-- **Heartbeats:** Monitor shard heartbeats to ensure connectivity and performance.
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Changelog](#changelog)
 
-### User Management
+## Features
 
-- **Ban Users:** Admin panel to ban users and provide ban reasons.
-- **View Banned Users:** List of banned users with ban details, including reason and ban ID.
+- **Dashboard Overview:** Provides a high-level overview of your bot's performance and status.
+- **Shard Management:** Monitor and control individual shards of your bot.
+- **User Management:** Ban users and view banned users list.
+- **Real-Time Updates:** See live updates on bot status and shard information.
+- **Dark Mode:** Sleek and modern dark theme for better usability.
 
-### Real-Time Updates
+## Installation
 
-- **WebSocket Connection:** Uses WebSocket for live updates on bot status and shard information.
-- **Notification System:** Alerts for critical issues or important updates.
+To get started with the Discord Bot Dashboard, follow these steps:
 
-### Dark Mode
+1. **Clone the Repository:**
 
-- **User Interface:** A modern, dark-themed interface designed for ease of use during extended periods of operation.
-- **Customizable Theme:** Easily switch themes or customize colors to match your preferences.
-
-## Project Structure
-
-Here's a brief overview of the project structure:
-
-- `src/` - Contains the source code for the React application.
-  - `components/` - Reusable components for the dashboard.
-  - `pages/` - React components corresponding to different pages/routes.
-  - `styles/` - CSS files and stylesheets for the application.
-  - `utils/` - Utility functions and helper scripts.
-- `public/` - Public assets, such as the `index.html` file and images.
-- `.env` - Environment variables configuration file.
-- `package.json` - Project metadata and dependencies.
-- `README.md` - This documentation file.
+   ```bash
+   git clone https://github.com/your-username/discord-bot-dashboard.git
 
 ## Troubleshooting
 
-### Common Issues
-
-1. **API Connection Errors:**
-
-   Ensure that the `REACT_APP_API_URL` in your `.env` file is correctly set and that your API server is running.
-
-2. **Build Failures:**
+1. **Build Failures:**
 
    If you encounter build issues, try clearing the cache and reinstalling dependencies:
 
