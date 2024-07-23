@@ -1,6 +1,6 @@
 # Discord Bot Dashboard
 
-Welcome to the **Discord Bot Dashboard**! This React.js application allows you to manage and monitor your Discord bot's activities and settings.
+Welcome to the **Discord Bot Dashboard**! This React.js application allows you to manage your Discord bot's activities and settings.
 
 ![Discord Bot Dashboard](https://img.shields.io/badge/Discord_Bot_Dashboard-React.js-blue)
 
@@ -17,9 +17,6 @@ Welcome to the **Discord Bot Dashboard**! This React.js application allows you t
 ## Features
 
 - **Dashboard Overview:** Provides a high-level overview of your bot's performance and status.
-- **Shard Management:** Monitor and control individual shards of your bot.
-- **User Management:** Ban users and view banned users list.
-- **Real-Time Updates:** See live updates on bot status and shard information.
 - **Dark Mode:** Sleek and modern dark theme for better usability.
 
 ## Installation
