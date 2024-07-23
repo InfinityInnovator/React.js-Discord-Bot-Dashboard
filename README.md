@@ -8,11 +8,8 @@ Welcome to the **Discord Bot Dashboard**! This React.js application allows you t
 
 - [Features](#features)
 - [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Changelog](#changelog)
+- [Troubleshooting](#Troubleshooting)
 
 ## Features
 
