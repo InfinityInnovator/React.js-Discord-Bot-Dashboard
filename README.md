@@ -34,3 +34,5 @@ To get started with the Discord Bot Dashboard, follow these steps:
    npm cache clean --force
    rm -rf node_modules
    npm install
+
+**IMPORTANT**: You are 100% allowed to use this for your own projects but if you claim this as yours and if it is clearly the same structure and same code as mine i will be reporting.
