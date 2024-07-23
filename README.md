@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+## Features Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Dashboard Overview
 
-## Available Scripts
+- **Live Status:** Displays real-time status of your bot, including uptime and any errors.
+- **Shard Information:** Monitor the status of individual shards, including their resource usage.
 
-In the project directory, you can run:
+### Shard Management
 
-### `npm start`
+- **View Shards:** See a list of all active shards with their status.
+- **Control Shards:** Restart or stop specific shards as needed.
+- **Heartbeats:** Monitor shard heartbeats to ensure connectivity and performance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### User Management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Ban Users:** Admin panel to ban users and provide ban reasons.
+- **View Banned Users:** List of banned users with ban details, including reason and ban ID.
 
-### `npm test`
+### Real-Time Updates
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **WebSocket Connection:** Uses WebSocket for live updates on bot status and shard information.
+- **Notification System:** Alerts for critical issues or important updates.
 
-### `npm run build`
+### Dark Mode
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **User Interface:** A modern, dark-themed interface designed for ease of use during extended periods of operation.
+- **Customizable Theme:** Easily switch themes or customize colors to match your preferences.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Here's a brief overview of the project structure:
 
-### `npm run eject`
+- `src/` - Contains the source code for the React application.
+  - `components/` - Reusable components for the dashboard.
+  - `pages/` - React components corresponding to different pages/routes.
+  - `styles/` - CSS files and stylesheets for the application.
+  - `utils/` - Utility functions and helper scripts.
+- `public/` - Public assets, such as the `index.html` file and images.
+- `.env` - Environment variables configuration file.
+- `package.json` - Project metadata and dependencies.
+- `README.md` - This documentation file.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Troubleshooting
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Common Issues
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **API Connection Errors:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Ensure that the `REACT_APP_API_URL` in your `.env` file is correctly set and that your API server is running.
 
-## Learn More
+2. **Build Failures:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   If you encounter build issues, try clearing the cache and reinstalling dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   npm cache clean --force
+   rm -rf node_modules
+   npm install
